@@ -47,8 +47,8 @@ const getNyList = () => {
     return res ? JSON.parse(res) : []
 }
 
-const setNyList = async (booksList) => {
-    await window.localStorage.setItem(NY_BOOKS_LIST_KEY, JSON.stringify(booksList));
+const setNyList =  (booksList) => {
+     window.localStorage.setItem(NY_BOOKS_LIST_KEY, JSON.stringify(booksList));
 }
 
 /**
@@ -57,7 +57,7 @@ const setNyList = async (booksList) => {
 
 const containerDivElement = document.querySelector('.container')
 const booksDivElement = document.querySelector('.books')
-const spinnerDivElement = document.querySelector('.spinner')
+// const spinnerDivElement = document.querySelector('.spinner')
 
 /**
  * @param {string} text
@@ -77,9 +77,10 @@ const createInfoElement = (text) => {
  * @param {string} data.info2
  * @param {string} data.info3
  * @param {string} data.list_name_encoded
+ * @param {boolean} isDetails
  */
 
-const createCardElement = (data) => {
+const createCardElement = (data, isDetails = false) => {
     const newCardElement = document.createElement('div')
     newCardElement.setAttribute('class', 'card')
 
@@ -110,9 +111,11 @@ const createCardElement = (data) => {
     newCardElement.append(newTitleElement, newCardContentElement)
 
 
-    containerDivElement.appendChild(newCardElement)
-
-    // booksDivElement.appendChild(newCardElement)
+    if (!isDetails) {
+        containerDivElement.appendChild(newCardElement)
+    } else {
+        booksDivElement.appendChild(newCardElement)
+    }
 
 }
 
@@ -148,7 +151,7 @@ async function startApp() {
     }
 
     containerDivElement.setAttribute('class', 'container')
-    spinnerDivElement.setAttribute('class', 'disabled')
+    // spinnerDivElement.setAttribute('class', 'disabled')
 
 }
 

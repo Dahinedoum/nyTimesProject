@@ -73,7 +73,7 @@ body {
     
   }
 
-  .container {
+  .container, .books {
     align-items: center;
     background-image: linear-gradient(to right, #e8b9a8, #dce8dd, #e8b9a8);
     display: flex;
@@ -293,5 +293,10 @@ body {
     color: #666;
     font-size: 14px;
     text-align: center;
+  }
+
+
+  .disabled {
+    display: none;
   }
 
