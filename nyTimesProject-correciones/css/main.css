@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .header-buttons {
+    display: flex;
+    align-items: center;
+  }
+  
+  a.button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    background-color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  a.button:hover {
+    background-color: #508d93;
+    color: #fff;
+  }
+  
+  .login-button {
+    background-color: #e8b9a8;
+  }
+  
+  .signup-button {
+    background-color: rgb(73, 57, 57);
+    color: #fff;
+  }
+  
+  .Home-button {
+    background-color: transparent;
+    border: 2px solid #6e5f5f;
+    color: #8d7878;
+  }
+body {
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    color: #222
+  }
+
+  .header{
+    margin: 0;
+    padding: 5px 30px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    box-shadow: 0px 12px 24px 1px rgba(0,0,0,0.46);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    position: relative; 
+    
+  }
+
+  .container, .books {
+    align-items: center;
+    background-image: linear-gradient(to right, #e8b9a8, #dce8dd, #e8b9a8);
+    display: flex;
+    flex-flow: row wrap;
+    gap: 16px;
+    margin:  auto;
+    max-width: 1200px;
+    padding: 60px;
+    padding-left: 110px;
+    overflow: auto; /* Hacer que el contenedor haga scroll */
+  }
+  
+  .card {
+    background-color: #f4f6f2;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 0 0 calc(33.3333% - 20px); /* las tarjetas ocupan aproximadamente 1/3 del ancho del contenedor*/
+    margin-bottom: 20px;
+    max-width: 300px;
+    overflow: hidden; /* Evitar que el contenido afecte el tamaño de la tarjeta */
+    padding: 20px;
+    margin : 0 auto
+  }
+  
+  .title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Mostrar puntos suspensivos si el contenido se desborda */
+    white-space: nowrap; /*Evitar que el contenido se desborde y haga saltos de línea */
+  }
+  
+  .cardContent {
+    font-size: 14px;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+    
+  }
+  
+  .info {
+    color: #777;
+    margin-top: 0;
+    margin-bottom: 5px;
+    
+  }
+
+  .btn {
+    background: rgb(239, 239, 243);
+    background: linear-gradient(0deg, rgb(217, 218, 233) 0%, rgb(199, 200, 213) 100%);
+    border: 1px;
+    padding: 8px;
+  }
+  
+  .btn:hover {
+     background: rgb(109, 144, 127);
+  background: linear-gradient(0deg, rgb(189, 189, 209) 0%, rgb(191, 204, 217) 100%);
+  }
+  
+
+
+  .logo {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #e8b9a8;
+    padding: 10px;
+    border: solid 2px rgba(255, 255, 255, 0.2);
+    font-family: 'Lato', sans-serif;
+  }
+  
+
+  .logo:hover, .logo:focus {
+    text-decoration: none;
+    color: rgb(181, 123, 123);
+  }
+  .logo span:hover,  .logo span:focus {
+    text-decoration: none;
+    color: #e8b9a8;
+  }
+  .logo span{
+    color: rgb(73, 57, 57);
+  }
+  
+  .headings {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .headings h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+
+  .formbox {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  .formbox h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .formbox label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .formbox input[type="text"],
+  .formbox input[type="password"], .formbox input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .formbox #btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .formbox a {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+
+  p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 1rem 0;
+    color: #333;
+  }
+  
+  a {
+    color: rgb(25, 111, 151);
+    text-decoration: none;
+    border-bottom: 1px solid #b7c0c6;
+  }
+  
+  a:hover {
+    color: #508d93;
+    border-bottom-color: #508d93;
+  }
+  
+  .error {
+    font-size: 25px;
+    font-weight: bolder;
+    color: red;
+    padding: 10px;
+    border: solid 4px rgba(255, 255, 255, 0.2);
+    font-family: 'Lato', sans-serif;
+  }
+
+
+  .footer {
+    margin: 0;
+    padding: 20px 30px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    box-shadow: 0px 12px 10px 1px rgba(0, 0, 0, 0.46);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    position: relative;
+  }
+  
+  .footer::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    z-index: -1;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .footer a {
+    color: #508d93;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+    text-align: center;
+  }
+
+
+  .disabled {
+    display: none;
+  }
+

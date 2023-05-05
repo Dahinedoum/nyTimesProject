@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="../css/main.css" />
+      <title>NYTimes Library</title>
+   </head>
+   <body>
+    
+    <div class="header">
+        <a href="/nyTimesProject/index.html" class="logo">The <span>NYTimes Library</span></a>
+        <a href="/nyTimesProject/index.html" class="button library-button">Home</a>
+     </div>
+     
+     <div class="container">
+      <div id="error-message"></div>
+         <div class="headings"></div>
+         <div class="formbox">
+            <h3>Log In</h3>
+            <form id="form">
+               <label for="email">Email:</label>
+               <input type="email" id="email" name="email" required />
+               <label for="">Password</label>
+               <input type="password" id="" name="password" class="asd" />
+               <input
+                  id="btn"
+                  type="submit"
+                  name="submit"
+                  value="Log In"
+                  class="mainbox"
+               />
+               <label for="">New reader?</label>
+               <a href="/nyTimesProject/signup.html" class="mainbox">Register Now</a>
+            </form>
+         </div>
+    </div>
+    <script type="module" src="../js/firebase.js"></script>
+    <script type="module" src="../js/auth.js"></script>
+   </body>
+</html>
